@@ -1,6 +1,5 @@
 :root {
   --bg: #f4f7fb;
-  --bg-2: #eaf0f8;
   --card: #ffffff;
   --text: #182230;
   --muted: #5f6b7a;
@@ -56,8 +55,7 @@ button {
 }
 
 .site-header {
-  position: sticky;
-  top: 0;
+  position: relative;
   z-index: 1000;
   background: rgba(255, 255, 255, 0.86);
   backdrop-filter: blur(14px);
@@ -70,6 +68,7 @@ button {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
+  position: relative;
 }
 
 .brand {
@@ -387,10 +386,14 @@ button {
   display: none;
 }
 
-.summary-hint {
-  font-size: 13px;
+.accordion summary::after {
+  content: "▾";
+  font-size: 18px;
   color: var(--muted);
-  font-weight: 700;
+}
+
+.accordion[open] summary::after {
+  content: "▴";
 }
 
 .accordion-content {
