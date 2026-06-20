@@ -6,7 +6,7 @@
   <title>Yash Dilip Sanklecha | Portfolio</title>
   <meta
     name="description"
-    content="Portfolio of Yash Dilip Sanklecha, CSE student, semester 4 completed, CGPA 9.83333, skills, projects, and certificates."
+    content="Portfolio of Yash Dilip Sanklecha, CSE student, projects, certificates, and technical skills."
   />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,13 +17,17 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="page-bg"></div>
-
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="brand" href="#home">Yash Dilip Sanklecha</a>
 
-      <nav class="nav" aria-label="Primary">
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" id="siteNav" aria-label="Primary">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
@@ -43,19 +47,33 @@
         <div class="hero-copy">
           <p class="eyebrow">Computer Science Engineering Student</p>
           <h1>YASH DILIP SANKLECHA</h1>
-          <div class="type-row">
-            <span id="typedText">CSE Student</span>
-            <span class="cursor">|</span>
-          </div>
-
           <p class="hero-text">
-            I build clean, practical, internship-ready web and software projects. This portfolio is
-            designed to show proof fast: academics, skills, projects, certificates, and contact.
+            I build practical, recruiter-friendly projects with a focus on solid fundamentals,
+            clean execution, and real-world usefulness.
           </p>
 
+          <div class="hero-highlights" aria-label="Highlights">
+            <div class="highlight-card">
+              <span class="highlight-label">CGPA</span>
+              <strong>9.83333</strong>
+            </div>
+            <div class="highlight-card">
+              <span class="highlight-label">NPTEL C++</span>
+              <strong>71%</strong>
+            </div>
+            <div class="highlight-card">
+              <span class="highlight-label">Semester</span>
+              <strong>4 Completed</strong>
+            </div>
+            <div class="highlight-card">
+              <span class="highlight-label">IBM SQL</span>
+              <strong>Certified</strong>
+            </div>
+          </div>
+
           <div class="hero-actions">
-            <a class="btn btn-primary" href="resume.pdf" download>Download Resume</a>
-            <a class="btn btn-secondary" href="#projects">View Projects</a>
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-secondary" href="#contact">Contact Me</a>
           </div>
         </div>
       </div>
@@ -71,13 +89,12 @@
         <div class="card about-grid">
           <div class="about-copy">
             <p>
-              I am a Computer Science Engineering student focused on practical execution, strong
-              fundamentals, and building a profile that stands out for internships and technical
-              opportunities.
+              I am a Computer Science Engineering student focused on building real projects,
+              improving technical depth, and presenting my work in a clear and recruiter-friendly way.
             </p>
             <p>
-              I have completed the fourth semester and currently hold a CGPA of <strong>9.83333</strong>.
-              My focus is on turning skills into visible proof through projects and certifications.
+              My current academic standing is strong, and I am building a portfolio with a balance of
+              industry-style projects, academic projects, and certification evidence.
             </p>
           </div>
 
@@ -95,8 +112,8 @@
               <strong>Semester 4 Completed</strong>
             </div>
             <div class="fact">
-              <span>CGPA</span>
-              <strong>9.83333</strong>
+              <span>Focus</span>
+              <strong>Projects & Fundamentals</strong>
             </div>
           </div>
         </div>
@@ -105,27 +122,31 @@
 
     <section class="section" id="skills">
       <div class="wrap">
-        <div class="section-head">
-          <p class="section-kicker">Skills</p>
-          <h2>Current stack</h2>
-        </div>
+        <details class="accordion">
+          <summary>
+            <span>Skills</span>
+            <span class="summary-hint">Click to expand</span>
+          </summary>
 
-        <div class="card">
-          <div class="skills-badges">
-            <span class="skill-badge">C</span>
-            <span class="skill-badge">C++</span>
-            <span class="skill-badge">Java</span>
-            <span class="skill-badge">Python</span>
-            <span class="skill-badge">HTML</span>
-            <span class="skill-badge">CSS</span>
-            <span class="skill-badge">JavaScript</span>
-            <span class="skill-badge">App Development</span>
-            <span class="skill-badge">Data Structures & Algorithms</span>
-            <span class="skill-badge">Problem Solving</span>
-            <span class="skill-badge">Git & GitHub</span>
-            <span class="skill-badge">Responsive Design</span>
+          <div class="accordion-content">
+            <div class="card">
+              <div class="skills-grid">
+                <span class="skill-badge">C</span>
+                <span class="skill-badge">C++</span>
+                <span class="skill-badge">Java</span>
+                <span class="skill-badge">Python</span>
+                <span class="skill-badge">HTML</span>
+                <span class="skill-badge">CSS</span>
+                <span class="skill-badge">JavaScript</span>
+                <span class="skill-badge">Git</span>
+                <span class="skill-badge">GitHub</span>
+                <span class="skill-badge">App Development</span>
+                <span class="skill-badge">Data Structures</span>
+                <span class="skill-badge">Algorithms</span>
+              </div>
+            </div>
           </div>
-        </div>
+        </details>
       </div>
     </section>
 
@@ -133,86 +154,154 @@
       <div class="wrap">
         <div class="section-head">
           <p class="section-kicker">Projects</p>
-          <h2>Five project slots</h2>
+          <h2>Selected work</h2>
         </div>
 
         <div class="projects-grid">
-          <article class="card project-card" data-project>
-            <div class="project-preview">Project 1</div>
+          <article class="card project-card">
+            <div class="project-top project-top-primary">
+              <span>Project 1</span>
+              <strong>North Studio Wholesale Clothing Website</strong>
+            </div>
+
             <div class="card-body">
-              <p class="status">Under testing</p>
-              <h3>Project 1</h3>
-              <p class="desc">Project details, GitHub link, and live demo will be added later.</p>
-              <div class="tag-row">
-                <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+              <p class="project-desc">
+                Developed a production-ready wholesale clothing platform for North Studio using
+                React, Firebase, Firestore, Cloudinary, and Vercel. The system supports product
+                management, category management, dealer registration, wholesale pricing, cart flow,
+                order tracking, admin dashboard, image gallery, and Firebase authentication.
+              </p>
+
+              <div class="tag-row" aria-label="Technologies">
+                <span class="tag">React</span>
+                <span class="tag">Vite</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Firebase</span>
+                <span class="tag">Firestore</span>
+                <span class="tag">Cloudinary</span>
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">Vercel</span>
               </div>
+
+              <ul class="feature-list">
+                <li>Wholesale pricing logic</li>
+                <li>Dealer registration workflow</li>
+                <li>Category and product management</li>
+                <li>Order tracking and admin control</li>
+              </ul>
+
               <div class="link-row">
-                <a href="#" class="btn btn-live">Live Demo</a>
-                <a href="#" class="btn btn-code">GitHub</a>
+                <a class="btn btn-live" href="https://northstudioindia.com" target="_blank" rel="noreferrer">Visit Website</a>
               </div>
             </div>
           </article>
 
-          <article class="card project-card" data-project>
-            <div class="project-preview">Project 2</div>
+          <article class="card project-card">
+            <div class="project-top">
+              <span>Project 2</span>
+              <strong>SDMCET Central Library Management System</strong>
+            </div>
+
             <div class="card-body">
-              <p class="status">Under testing</p>
-              <h3>Project 2</h3>
-              <p class="desc">Project details, GitHub link, and live demo will be added later.</p>
-              <div class="tag-row">
-                <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+              <p class="project-desc">
+                A comprehensive web-based library management system developed for SDMCET to automate
+                book inventory, borrowing and return operations, student management, librarian
+                management, damage tracking, fine management, authentication, and transaction
+                monitoring.
+              </p>
+
+              <div class="tag-row" aria-label="Technologies">
+                <span class="tag">Java</span>
+                <span class="tag">Servlets</span>
+                <span class="tag">JSP</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">Tomcat</span>
               </div>
+
+              <ul class="feature-list">
+                <li>Student and librarian authentication</li>
+                <li>Book inventory and rack tracking</li>
+                <li>Borrow / return and damage reporting</li>
+                <li>Fine management and transaction logs</li>
+              </ul>
+
               <div class="link-row">
-                <a href="#" class="btn btn-live">Live Demo</a>
-                <a href="#" class="btn btn-code">GitHub</a>
+                <a class="btn btn-code" href="https://github.com/YASH-DILIP-SANKLECHA/oops_hackathon" target="_blank" rel="noreferrer">GitHub</a>
               </div>
             </div>
           </article>
 
-          <article class="card project-card" data-project>
-            <div class="project-preview">Project 3</div>
+          <article class="card project-card">
+            <div class="project-top">
+              <span>Project 3</span>
+              <strong>CSE Project Repository</strong>
+            </div>
+
             <div class="card-body">
-              <p class="status">Under testing</p>
-              <h3>Project 3</h3>
-              <p class="desc">Project details, GitHub link, and live demo will be added later.</p>
-              <div class="tag-row">
-                <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+              <p class="project-desc">
+                A comprehensive web-based repository platform developed for Computer Science
+                Engineering students to upload, manage, search, and showcase academic projects. The
+                system includes project management, category administration, advanced filtering,
+                GitHub integration, project statistics, search functionality, CRUD operations, and
+                secure database-driven operations through a responsive interface.
+              </p>
+
+              <div class="tag-row" aria-label="Technologies">
+                <span class="tag">PHP</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
               </div>
+
+              <ul class="feature-list">
+                <li>Project upload and edit flow</li>
+                <li>Search and filtering by metadata</li>
+                <li>Category management and CRUD</li>
+                <li>GitHub repository integration</li>
+              </ul>
+
               <div class="link-row">
-                <a href="#" class="btn btn-live">Live Demo</a>
-                <a href="#" class="btn btn-code">GitHub</a>
+                <a class="btn btn-code" href="https://github.com/YASH-DILIP-SANKLECHA/web_tech" target="_blank" rel="noreferrer">GitHub</a>
               </div>
             </div>
           </article>
 
-          <article class="card project-card" data-project>
-            <div class="project-preview">Project 4</div>
-            <div class="card-body">
-              <p class="status">Under testing</p>
-              <h3>Project 4</h3>
-              <p class="desc">Project details, GitHub link, and live demo will be added later.</p>
-              <div class="tag-row">
-                <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
-              </div>
-              <div class="link-row">
-                <a href="#" class="btn btn-live">Live Demo</a>
-                <a href="#" class="btn btn-code">GitHub</a>
-              </div>
+          <article class="card project-card">
+            <div class="project-top">
+              <span>Project 4</span>
+              <strong>Operating System Scheduling Algorithms Simulator</strong>
             </div>
-          </article>
 
-          <article class="card project-card" data-project>
-            <div class="project-preview">Project 5</div>
             <div class="card-body">
-              <p class="status">Under testing</p>
-              <h3>Project 5</h3>
-              <p class="desc">Project details, GitHub link, and live demo will be added later.</p>
-              <div class="tag-row">
-                <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+              <p class="project-desc">
+                Developed a CPU scheduling simulator in C implementing major operating system
+                scheduling algorithms including First Come First Serve (FCFS), Shortest Job First
+                (Non-Preemptive), Shortest Remaining Time First (Preemptive SJF), and Round Robin.
+                The system calculates completion time, turnaround time, waiting time, generates
+                Gantt charts, and compares scheduling performance using linked list based process
+                management.
+              </p>
+
+              <div class="tag-row" aria-label="Technologies">
+                <span class="tag">C</span>
+                <span class="tag">DSA</span>
+                <span class="tag">Linked Lists</span>
+                <span class="tag">OS Concepts</span>
               </div>
+
+              <ul class="feature-list">
+                <li>FCFS scheduling</li>
+                <li>SJF non-preemptive and preemptive</li>
+                <li>Round Robin with time quantum</li>
+                <li>Completion, TAT, WT, and Gantt chart</li>
+              </ul>
+
               <div class="link-row">
-                <a href="#" class="btn btn-live">Live Demo</a>
-                <a href="#" class="btn btn-code">GitHub</a>
+                <span class="btn btn-soon" aria-disabled="true">Coming Soon</span>
               </div>
             </div>
           </article>
@@ -222,52 +311,64 @@
 
     <section class="section" id="certificates">
       <div class="wrap">
-        <div class="section-head">
-          <p class="section-kicker">Certificates</p>
-          <h2>Five certificate slots</h2>
-        </div>
+        <details class="accordion">
+          <summary>
+            <span>Certificates</span>
+            <span class="summary-hint">Click to expand</span>
+          </summary>
 
-        <div class="cert-grid">
-          <button class="card cert-card" type="button" data-cert data-title="Certificate 1" data-subtitle="NPTEL / IBM / In progress" data-image="cert1.jpg">
-            <img src="cert1.jpeg" alt="Certificate 1" />
-            <div class="card-body">
-              <h3>Certificate 1</h3>
-              <p>NPTEL / IBM / In progress</p>
-            </div>
-          </button>
+          <div class="accordion-content">
+            <div class="cert-grid">
+              <article class="card cert-card">
+                <img src="cert1.jpeg" alt="NPTEL Programming in C++ – IIT Kharagpur" />
+                <div class="card-body">
+                  <h3>NPTEL Programming in C++ – IIT Kharagpur</h3>
+                  <p>Completed a 12-week NPTEL certification course on Programming in C++. Covered object-oriented programming, inheritance, polymorphism, templates, exception handling, STL, and modern C++ concepts. Secured 71% in the proctored NPTEL certification examination.</p>
+                </div>
+              </article>
 
-          <button class="card cert-card" type="button" data-cert data-title="Certificate 2" data-subtitle="NPTEL / IBM / In progress" data-image="cert2.jpg">
-            <img src="cert2.jpg" alt="Certificate 2" />
-            <div class="card-body">
-              <h3>Certificate 2</h3>
-              <p>NPTEL / IBM / In progress</p>
-            </div>
-          </button>
+              <article class="card cert-card">
+                <img src="cert2.jpeg" alt="SQL and Relational Databases 101 – IBM" />
+                <div class="card-body">
+                  <h3>SQL and Relational Databases 101 – IBM</h3>
+                  <p>Learned SQL fundamentals, relational database concepts, table relationships, joins, normalization, database design, and query optimization through IBM Developer Skills Network and CognitiveClass.</p>
+                </div>
+              </article>
 
-          <button class="card cert-card" type="button" data-cert data-title="Certificate 3" data-subtitle="NPTEL / IBM / In progress" data-image="cert3.jpg">
-            <img src="cert3.jpg" alt="Certificate 3" />
-            <div class="card-body">
-              <h3>Certificate 3</h3>
-              <p>NPTEL / IBM / In progress</p>
-            </div>
-          </button>
+              <article class="card cert-card">
+                <img src="cert3.jpeg" alt="Introduction to GAN – Simplilearn SkillUp" />
+                <div class="card-body">
+                  <h3>Introduction to GAN – Simplilearn SkillUp</h3>
+                  <p>Studied Generative Adversarial Networks (GANs), generator-discriminator architecture, synthetic data generation, image generation techniques, and introductory AI model concepts.</p>
+                </div>
+              </article>
 
-          <button class="card cert-card" type="button" data-cert data-title="Certificate 4" data-subtitle="Placeholder image later" data-image="cert4.jpg">
-            <img src="cert4.jpg" alt="Certificate 4" />
-            <div class="card-body">
-              <h3>Certificate 4</h3>
-              <p>Placeholder image later</p>
-            </div>
-          </button>
+              <article class="card cert-card">
+                <img src="cert4.jpeg" alt="Machine Learning – Simplilearn SkillUp" />
+                <div class="card-body">
+                  <h3>Machine Learning – Simplilearn SkillUp</h3>
+                  <p>Learned supervised learning, unsupervised learning, classification, regression, model evaluation, training workflows, and practical machine learning fundamentals.</p>
+                </div>
+              </article>
 
-          <button class="card cert-card" type="button" data-cert data-title="Certificate 5" data-subtitle="Placeholder image later" data-image="cert5.jpg">
-            <img src="cert5.jpg" alt="Certificate 5" />
-            <div class="card-body">
-              <h3>Certificate 5</h3>
-              <p>Placeholder image later</p>
+              <article class="card cert-card">
+                <img src="cert5.jpeg" alt="Agamya Tech Summit 2025 – Ekaiva Hackathon Participation" />
+                <div class="card-body">
+                  <h3>Agamya Tech Summit 2025 – Ekaiva Hackathon Participation</h3>
+                  <p>Participated in Ekaiva Hackathon 2025 organized by Agamya Cyber Tech, CySeck, SDMCET Dharwad, and IEEE Computer Society. Collaborated in a team environment to solve technical challenges, explore innovative solutions, and gain practical hackathon experience.</p>
+                </div>
+              </article>
+
+              <article class="card cert-card">
+                <img src="cert6.jpeg" alt="UNIX Shell Programming Workshop – SDMCET Dharwad" />
+                <div class="card-body">
+                  <h3>UNIX Shell Programming Workshop – SDMCET Dharwad</h3>
+                  <p>Completed a hands-on UNIX Shell Programming workshop covering Linux commands, shell scripting, automation, command-line tools, and UNIX-based development workflows.</p>
+                </div>
+              </article>
             </div>
-          </button>
-        </div>
+          </div>
+        </details>
       </div>
     </section>
 
@@ -278,7 +379,7 @@
           <h2>Reach me directly</h2>
         </div>
 
-        <div class="card contact-grid">
+        <div class="contact-grid">
           <a class="contact-box" href="mailto:sanklechayash017@gmail.com">
             <span>Email</span>
             <strong>sanklechayash017@gmail.com</strong>
@@ -287,6 +388,11 @@
           <a class="contact-box" href="https://www.linkedin.com/in/yash-dilip-sanklecha-1530b432b" target="_blank" rel="noreferrer">
             <span>LinkedIn</span>
             <strong>linkedin.com/in/yash-dilip-sanklecha</strong>
+          </a>
+
+          <a class="contact-box" href="https://github.com/YASH-DILIP-SANKLECHA" target="_blank" rel="noreferrer">
+            <span>GitHub</span>
+            <strong>github.com/YASH-DILIP-SANKLECHA</strong>
           </a>
         </div>
       </div>
@@ -298,18 +404,6 @@
       <p>© 2025 Yash Dilip Sanklecha</p>
     </div>
   </footer>
-
-  <button class="backtop" id="backTop" type="button" aria-label="Back to top">↑</button>
-
-  <div class="modal" id="previewModal" aria-hidden="true">
-    <div class="modal-backdrop" data-close-modal></div>
-    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-      <button class="modal-close" type="button" data-close-modal aria-label="Close modal">×</button>
-      <img id="modalImage" alt="" />
-      <h3 id="modalTitle"></h3>
-      <p id="modalSubtitle"></p>
-    </div>
-  </div>
 
   <script src="script.js"></script>
 </body>
