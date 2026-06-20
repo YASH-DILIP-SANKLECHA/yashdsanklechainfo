@@ -281,13 +281,6 @@ button {
   border-color: var(--border);
 }
 
-.btn-soon {
-  background: #edf3fb;
-  color: var(--muted);
-  border-color: var(--border);
-  cursor: default;
-}
-
 .section {
   padding: 26px 0 0;
 }
