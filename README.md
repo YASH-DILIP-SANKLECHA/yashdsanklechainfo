@@ -1,377 +1,310 @@
 https://yash-dilip-sanklecha.github.io/yashdsanklechainfo/
 
 
-# Yash Dilip Sanklecha Portfolio Website
+Yash Dilip Sanklecha Portfolio Website
 
 A personal portfolio website developed to showcase academic achievements, technical skills, certifications, and software development projects. The portfolio is designed with a recruiter-focused approach and provides a clean, responsive, and professional presentation across desktop, tablet, and mobile devices.
 
----
-
-## Overview
+Overview
 
 This portfolio serves as a central platform to present:
 
-- Academic information
-- Technical skills
-- Software development projects
-- Professional certifications
-- Contact information
-- GitHub profile and project repositories
+• Academic information
+• Technical skills
+• Software development projects
+• Professional certifications
+• Contact information
+• GitHub profile and project repositories
 
 The website is fully responsive and optimized for various screen sizes while maintaining a consistent blue, white, and gold design theme.
 
----
+Features
 
-## Features
+Professional Hero Section
 
-### Professional Hero Section
+• Personal profile image
+• Academic highlights
+• CGPA information
+• NPTEL certification score
+• Degree completion year
+• Direct navigation buttons
 
-- Personal profile image
-- Academic highlights
-- CGPA information
-- NPTEL certification score
-- Degree completion year
-- Direct navigation buttons
+About Section
 
-### About Section
+• Professional introduction
+• Educational information
+• Career interests
+• Academic details
 
-- Professional introduction
-- Educational information
-- Career interests
-- Academic details
+Skills Section
 
-### Skills Section
+Technical skills presented in a clean and responsive layout:
 
-Technical skills presented in a collapsible layout:
+• C
+• C++
+• Java
+• Python
+• HTML
+• CSS
+• JavaScript
+• MySQL
+• PostgreSQL
 
-- C
-- C++
-- Java
-- Python
-- HTML
-- CSS
-- JavaScript
-- MySQL
-- PostgreSQL
+Projects Section
 
-### Projects Section
-
-Featured projects include:
-
-#### North Studio Wholesale Clothing Website
+North Studio Wholesale Clothing Website
 
 Production-ready wholesale clothing platform developed using React, Firebase, Firestore, Cloudinary, and Vercel.
 
-#### SDMCET Central Library Management System
+SDMCET Central Library Management System
 
 Complete web-based library management solution developed using Java, JSP, Servlets, and MySQL.
 
-#### CSE Project Repository
+CSE Project Repository
 
 Project management and repository platform developed using PHP and MySQL.
 
-#### Operating System Scheduling Algorithms Simulator
+Operating System Scheduling Algorithms Simulator
 
 CPU scheduling simulator implementing FCFS, SJF, SRTF, and Round Robin algorithms using C and linked lists.
 
-### Certificates Section
+Certificates Section
 
-Professional certifications with images and descriptions:
+• NPTEL Programming in C++ – IIT Kharagpur
+• SQL and Relational Databases 101 – IBM
+• Introduction to GAN – Simplilearn SkillUp
+• Machine Learning – Simplilearn SkillUp
+• Agamya Tech Summit 2025 – Ekaiva Hackathon Participation
+• UNIX Shell Programming Workshop – SDMCET Dharwad
 
-- NPTEL Programming in C++ – IIT Kharagpur
-- SQL and Relational Databases 101 – IBM
-- Introduction to GAN – Simplilearn SkillUp
-- Machine Learning – Simplilearn SkillUp
-- Agamya Tech Summit 2025 – Ekaiva Hackathon Participation
-- UNIX Shell Programming Workshop – SDMCET Dharwad
+Contact Section
 
-### Contact Section
+• Email
+• LinkedIn Profile
+• GitHub Profile
 
-Direct access to:
+Technology Stack
 
-- Email
-- LinkedIn Profile
-- GitHub Profile
+Frontend
 
----
+• HTML5
+• CSS3
+• JavaScript (ES6)
 
-## Technology Stack
+Design
 
-### Frontend
+• Responsive Design
+• Mobile First Approach
+• CSS Flexbox
+• CSS Grid
+• Modern UI Components
 
-- HTML5
-- CSS3
-- JavaScript (ES6)
+Hosting
 
-### Design
+• GitHub Pages
 
-- Responsive Design
-- Mobile First Approach
-- CSS Flexbox
-- CSS Grid
-- Modern UI Components
+Project Structure
 
-### Hosting
-
-- GitHub Pages
-
----
-
-## Project Structure
-
-```text
 portfolio/
-│
-├── index.html
-├── style.css
-├── script.js
-│
-├── assets/
-│   ├── myphoto.jpg
-│   ├── cert1.jpeg
-│   ├── cert2.jpeg
-│   ├── cert3.jpeg
-│   ├── cert4.jpeg
-│   ├── cert5.jpeg
-│   └── cert6.jpeg
-│
-└── README.md
-```
 
----
-
-## Getting Started
-
-### Clone Repository
-
-```bash
-git clone https://github.com/YASH-DILIP-SANKLECHA/YASH-DILIP-SANKLECHA.github.io.git
-```
-
-### Open Project
-
-```bash
-cd YASH-DILIP-SANKLECHA.github.io
-```
-
-### Run Website
-
-Simply open:
-
-```text
 index.html
-```
 
-in your browser.
+style.css
+
+script.js
+
+assets/
+├── myphoto.jpg
+├── cert1.jpeg
+├── cert2.jpeg
+├── cert3.jpeg
+├── cert4.jpeg
+├── cert5.jpeg
+└── cert6.jpeg
+
+README.md
+
+Getting Started
+
+Clone Repository
+
+git clone https://github.com/YASH-DILIP-SANKLECHA/YASH-DILIP-SANKLECHA.github.io.git
+
+Open Project
+
+cd YASH-DILIP-SANKLECHA.github.io
+
+Run Website
+
+Open index.html in any browser.
 
 No additional dependencies or installation steps are required.
 
----
-
-## Responsive Design
+Responsive Design
 
 The website is optimized for:
 
-- Desktop PCs
-- Laptops
-- Tablets
-- Mobile Devices
+• Desktop PCs
+• Laptops
+• Tablets
+• Mobile Devices
 
 Features include:
 
-- Responsive navigation menu
-- Mobile hamburger menu
-- Flexible project layouts
-- Responsive certificate cards
-- Adaptive typography
-- Touch-friendly interface
+• Responsive navigation menu
+• Mobile hamburger menu
+• Flexible project layouts
+• Responsive certificate cards
+• Adaptive typography
+• Touch-friendly interface
 
----
+Featured Projects
 
-## Featured Projects
+North Studio Wholesale Clothing Website
 
-### North Studio Wholesale Clothing Website
+Technologies:
 
-**Technologies**
+React
+Vite
+JavaScript
+Firebase
+Firestore
+Firebase Authentication
+Cloudinary
+HTML
+CSS
+Vercel
 
-- React
-- Vite
-- JavaScript
-- Firebase
-- Firestore
-- Firebase Authentication
-- Cloudinary
-- HTML
-- CSS
-- Vercel
-
-**Website**
+Website:
 
 https://northstudioindia.com
 
----
+SDMCET Central Library Management System
 
-### SDMCET Central Library Management System
+Technologies:
 
-**Technologies**
+Java
+Jakarta Servlets
+JSP
+MySQL
+HTML
+CSS
+Apache Tomcat
 
-- Java
-- Jakarta Servlets
-- JSP
-- MySQL
-- HTML
-- CSS
-- Apache Tomcat
-
-**GitHub**
+GitHub:
 
 https://github.com/YASH-DILIP-SANKLECHA/oops_hackathon
 
----
+CSE Project Repository
 
-### CSE Project Repository
+Technologies:
 
-**Technologies**
+PHP
+MySQL
+HTML
+CSS
+JavaScript
 
-- PHP
-- MySQL
-- HTML
-- CSS
-- JavaScript
-
-**GitHub**
+GitHub:
 
 https://github.com/YASH-DILIP-SANKLECHA/web_tech
 
----
+Operating System Scheduling Algorithms Simulator
 
-### Operating System Scheduling Algorithms Simulator
+Technologies:
 
-**Technologies**
+C
+Data Structures
+Linked Lists
+Operating Systems
 
-- C
-- Data Structures
-- Linked Lists
-- Operating Systems
+Features:
 
-**Features**
+• FCFS Scheduling
+• SJF Non-Preemptive Scheduling
+• SJF Preemptive Scheduling
+• Round Robin Scheduling
+• Gantt Chart Generation
+• Waiting Time Calculation
+• Turnaround Time Calculation
+• Completion Time Calculation
 
-- FCFS Scheduling
-- SJF Non-Preemptive Scheduling
-- SJF Preemptive Scheduling
-- Round Robin Scheduling
-- Gantt Chart Generation
-- Waiting Time Calculation
-- Turnaround Time Calculation
-- Completion Time Calculation
-
-**GitHub**
+GitHub:
 
 https://github.com/YASH-DILIP-SANKLECHA/OS-SCHEDULING-ALGORITHMS-
 
----
+Academic Information
 
-## Academic Information
-
-**Name**
-
+Name:
 Yash Dilip Sanklecha
 
-**Branch**
-
+Branch:
 Computer Science Engineering
 
-**College**
-
+College:
 SDMCET Dharwad
 
-**CGPA**
-
+CGPA:
 9.83333
 
-**Degree Completion Year**
-
+Degree Completion Year:
 2028
 
----
+Certifications
 
-## Certifications
-
-### NPTEL Programming in C++ – IIT Kharagpur
+NPTEL Programming in C++ – IIT Kharagpur
 
 Completed a 12-week certification course covering object-oriented programming, inheritance, polymorphism, templates, STL, exception handling, and modern C++ concepts.
 
 Score: 71%
 
----
-
-### SQL and Relational Databases 101 – IBM
+SQL and Relational Databases 101 – IBM
 
 Learned relational database concepts, SQL queries, joins, normalization, and database design principles.
 
----
-
-### Introduction to GAN – Simplilearn SkillUp
+Introduction to GAN – Simplilearn SkillUp
 
 Studied Generative Adversarial Networks, image generation techniques, and AI model fundamentals.
 
----
-
-### Machine Learning – Simplilearn SkillUp
+Machine Learning – Simplilearn SkillUp
 
 Covered supervised learning, unsupervised learning, classification, regression, and model evaluation.
 
----
-
-### Agamya Tech Summit 2025 – Ekaiva Hackathon Participation
+Agamya Tech Summit 2025 – Ekaiva Hackathon Participation
 
 Participated in a team-based hackathon focused on solving technical challenges and developing innovative solutions.
 
----
-
-### UNIX Shell Programming Workshop – SDMCET Dharwad
+UNIX Shell Programming Workshop – SDMCET Dharwad
 
 Completed a practical workshop on Linux commands, shell scripting, and automation.
 
----
+Contact
 
-## Contact
-
-### Email
-
+Email:
 sanklechayash017@gmail.com
 
-### GitHub
-
+GitHub:
 https://github.com/YASH-DILIP-SANKLECHA
 
-### LinkedIn
-
+LinkedIn:
 Add your LinkedIn profile URL here.
 
----
+Future Improvements
 
-## Future Improvements
+• Dark mode support
+• Project screenshots gallery
+• Project filtering
+• Blog section
+• Contact form with email integration
+• Analytics dashboard
 
-- Dark mode support
-- Project screenshots gallery
-- Project filtering
-- Blog section
-- Resume download option
-- Contact form with email integration
-- Analytics dashboard
-
----
-
-## License
+License
 
 This project is developed as a personal portfolio website and is intended for educational and professional presentation purposes.
 
----
+Author
 
-## Author
-
-### Yash Dilip Sanklecha
+Yash Dilip Sanklecha
 
 Computer Science Engineering Student
 
