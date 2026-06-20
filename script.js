@@ -1,7 +1,4 @@
 (() => {
-  const root = document.documentElement;
-  const themeToggle = document.getElementById("themeToggle");
-  const themeIcon = document.getElementById("themeIcon");
   const typedText = document.getElementById("typedText");
   const backTop = document.getElementById("backTop");
   const modal = document.getElementById("previewModal");
@@ -42,24 +39,6 @@
   }
 
   typeLoop();
-
-  const savedTheme = localStorage.getItem("theme");
-  const initialTheme =
-    savedTheme ||
-    (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-
-  function applyTheme(theme) {
-    document.body.setAttribute("data-theme", theme);
-    localStorage.setItem("theme", theme);
-    themeIcon.textContent = theme === "dark" ? "☀️" : "🌙";
-  }
-
-  applyTheme(initialTheme);
-
-  themeToggle.addEventListener("click", () => {
-    const current = document.body.getAttribute("data-theme") || "light";
-    applyTheme(current === "dark" ? "light" : "dark");
-  });
 
   const revealItems = document.querySelectorAll(
     ".section, .card, .project-card, .cert-card, .contact-box, .skill, .fact"
