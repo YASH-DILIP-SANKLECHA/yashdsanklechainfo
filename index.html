@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -6,185 +6,346 @@
   <title>Yash Dilip Sanklecha | Portfolio</title>
   <meta
     name="description"
-    content="Portfolio of Yash Dilip Sanklecha, CSE student, semester 4 completed, CGPA 9.83333, skills, projects, certificates, and coding profile."
+    content="Portfolio of Yash Dilip Sanklecha, CSE student, semester 4 completed, CGPA 9.83333, skills, projects, and certificates."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
   />
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="animations.css" />
-  <link rel="stylesheet" href="responsive.css" />
 </head>
-<body data-theme="light">
-  <header class="topbar">
-    <div class="wrap topbar-inner">
+<body>
+  <div class="page-bg"></div>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
       <a class="brand" href="#home">Yash Dilip Sanklecha</a>
 
       <nav class="nav" aria-label="Primary">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
-        <a href="#github">GitHub</a>
         <a href="#projects">Projects</a>
         <a href="#certificates">Certificates</a>
         <a href="#contact">Contact</a>
       </nav>
 
-      <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">🌙</button>
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle theme">
+        <span id="themeIcon">🌙</span>
+      </button>
     </div>
   </header>
 
-  <section class="hero" id="home">
-    <div class="wrap hero-grid">
-      <img class="avatar" src="myphoto.jpg" alt="Yash Dilip Sanklecha" />
-      <div class="hero-content">
-        <h1>YASH DILIP SANKLECHA</h1>
-        <div class="type-row" id="typeText">CSE Student</div>
-        <p>
-          Computer Science Engineering student focused on strong fundamentals, real projects,
-          and internship-level presentation. Built to show proof of skill fast.
-        </p>
-
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="resume.pdf" download>Download Resume</a>
-          <a class="btn btn-secondary" href="#projects">View Projects</a>
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div class="hero-photo-wrap">
+          <img class="hero-photo" src="myphoto.jpg" alt="Yash Dilip Sanklecha" />
         </div>
 
-        <div class="chips">
-          <span class="chip">C</span>
-          <span class="chip">C++</span>
-          <span class="chip">Java</span>
-          <span class="chip">Python</span>
-          <span class="chip">HTML</span>
-          <span class="chip">CSS</span>
-          <span class="chip">JavaScript</span>
-          <span class="chip">App Development</span>
+        <div class="hero-copy">
+          <p class="eyebrow">Computer Science Engineering Student</p>
+          <h1>YASH DILIP SANKLECHA</h1>
+          <div class="type-row">
+            <span id="typedText">CSE Student</span>
+            <span class="cursor">|</span>
+          </div>
+
+          <p class="hero-text">
+            I build clean, practical, internship-ready web and software projects. This portfolio is
+            designed to show proof fast: academics, skills, projects, certificates, and contact.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="resume.pdf" download>Download Resume</a>
+            <a class="btn btn-secondary" href="#projects">View Projects</a>
+          </div>
+
+          <div class="chips" aria-label="Skills summary">
+            <span class="chip">C</span>
+            <span class="chip">C++</span>
+            <span class="chip">Java</span>
+            <span class="chip">Python</span>
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">App Development</span>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <main>
-    <div class="wrap">
-      <section class="section card">
+    <section class="section" id="about">
+      <div class="wrap">
         <div class="section-head">
-          <h2>Snapshot</h2>
-          <span>Quick proof first</span>
+          <p class="section-kicker">About</p>
+          <h2>Quick profile</h2>
         </div>
 
-        <div class="stats-grid">
-          <div class="stat"><strong>9.83333</strong><span>Current CGPA</span></div>
-          <div class="stat"><strong>4</strong><span>Semesters Completed</span></div>
-          <div class="stat"><strong>5</strong><span>Projects Planned</span></div>
-          <div class="stat"><strong>5</strong><span>Certificates Planned</span></div>
-        </div>
-      </section>
-
-      <section id="about" class="section card">
-        <div class="section-head">
-          <h2>About Me</h2>
-          <span>Student profile</span>
-        </div>
-
-        <div class="about-grid">
-          <div>
+        <div class="card about-grid">
+          <div class="about-copy">
             <p>
-              I am a Computer Science Engineering student focused on building a strong profile for
-              internships and competitive opportunities. I value practical execution, clean work,
-              and showing proof through real projects and certifications.
+              I am a Computer Science Engineering student focused on practical execution, strong
+              fundamentals, and building a profile that stands out for internships and technical
+              opportunities.
             </p>
             <p>
-              I have completed semester 4 and my current CGPA is 9.83333.
+              I have completed the fourth semester and currently hold a CGPA of <strong>9.83333</strong>.
+              My focus is on turning skills into visible proof through projects and certifications.
             </p>
           </div>
 
-          <ul class="info-list">
-            <li><span>Name</span><b>Yash Dilip Sanklecha</b></li>
-            <li><span>Branch</span><b>Computer Science Engineering</b></li>
-            <li><span>Status</span><b>Semester 4 Completed</b></li>
-            <li><span>Focus</span><b>Internship-Ready Projects</b></li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="skills" class="section card">
-        <div class="section-head">
-          <h2>Skills</h2>
-          <span>Current stack</span>
-        </div>
-
-        <div class="skills-grid">
-          <div class="skill"><div class="skill-top"><span>C</span><span>85%</span></div><div class="bar"><div class="fill" style="width:85%"></div></div></div>
-          <div class="skill"><div class="skill-top"><span>C++</span><span>92%</span></div><div class="bar"><div class="fill" style="width:92%"></div></div></div>
-          <div class="skill"><div class="skill-top"><span>Java</span><span>80%</span></div><div class="bar"><div class="fill" style="width:80%"></div></div></div>
-          <div class="skill"><div class="skill-top"><span>Python</span><span>78%</span></div><div class="bar"><div class="fill" style="width:78%"></div></div></div>
-          <div class="skill"><div class="skill-top"><span>HTML</span><span>95%</span></div><div class="bar"><div class="fill" style="width:95%"></div></div></div>
-          <div class="skill"><div class="skill-top"><span>CSS</span><span>93%</span></div><div class="bar"><div class="fill" style="width:93%"></div></div></div>
-          <div class="skill"><div class="skill-top"><span>JavaScript</span><span>82%</span></div><div class="bar"><div class="fill" style="width:82%"></div></div></div>
-          <div class="skill"><div class="skill-top"><span>App Development</span><span>70%</span></div><div class="bar"><div class="fill" style="width:70%"></div></div></div>
-        </div>
-      </section>
-
-      <section id="github" class="section card">
-        <div class="section-head">
-          <h2>GitHub</h2>
-          <span>Live profile data</span>
-        </div>
-        <div class="github-loading">Loading GitHub profile...</div>
-      </section>
-
-      <section id="projects" class="section card">
-        <div class="section-head">
-          <h2>Projects</h2>
-          <span>5 slots ready</span>
-        </div>
-
-        <div class="projects-grid"></div>
-
-        <div class="note">
-          Project images are placeholders now. Replace them later with screenshots or live website previews.
-        </div>
-      </section>
-
-      <section id="certificates" class="section card">
-        <div class="section-head">
-          <h2>Certificates</h2>
-          <span>5 slots ready</span>
-        </div>
-
-        <div class="cert-grid"></div>
-      </section>
-
-      <section id="contact" class="section card">
-        <div class="section-head">
-          <h2>Contact</h2>
-          <span>Direct reach</span>
-        </div>
-
-        <div class="contact-grid">
-          <div class="contact-box">
-            <strong>Email</strong>
-            <a href="mailto:sanklechayash017@gmail.com">sanklechayash017@gmail.com</a>
-          </div>
-
-          <div class="contact-box">
-            <strong>LinkedIn</strong>
-            <a href="https://www.linkedin.com/in/yash-dilip-sanklecha-1530b432b" target="_blank" rel="noreferrer">
-              linkedin.com/in/yash-dilip-sanklecha
-            </a>
+          <div class="about-facts">
+            <div class="fact">
+              <span>Name</span>
+              <strong>Yash Dilip Sanklecha</strong>
+            </div>
+            <div class="fact">
+              <span>Branch</span>
+              <strong>Computer Science Engineering</strong>
+            </div>
+            <div class="fact">
+              <span>Status</span>
+              <strong>Semester 4 Completed</strong>
+            </div>
+            <div class="fact">
+              <span>CGPA</span>
+              <strong>9.83333</strong>
+            </div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="section-kicker">Skills</p>
+          <h2>Current stack</h2>
+        </div>
+
+        <div class="card">
+          <div class="skills-grid">
+            <div class="skill">
+              <div class="skill-top"><span>C</span><span>85%</span></div>
+              <div class="bar"><span style="width: 85%"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill-top"><span>C++</span><span>92%</span></div>
+              <div class="bar"><span style="width: 92%"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill-top"><span>Java</span><span>80%</span></div>
+              <div class="bar"><span style="width: 80%"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill-top"><span>Python</span><span>78%</span></div>
+              <div class="bar"><span style="width: 78%"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill-top"><span>HTML</span><span>95%</span></div>
+              <div class="bar"><span style="width: 95%"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill-top"><span>CSS</span><span>93%</span></div>
+              <div class="bar"><span style="width: 93%"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill-top"><span>JavaScript</span><span>82%</span></div>
+              <div class="bar"><span style="width: 82%"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill-top"><span>App Development</span><span>70%</span></div>
+              <div class="bar"><span style="width: 70%"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="section-kicker">Projects</p>
+          <h2>Five project slots</h2>
+        </div>
+
+        <div class="projects-grid">
+          <article class="card project-card" data-project>
+            <div class="project-preview">Project 1</div>
+            <div class="card-body">
+              <p class="status">Under testing</p>
+              <h3>Project 1</h3>
+              <p class="desc">Project details, GitHub link, and live demo will be added later.</p>
+              <div class="tag-row">
+                <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+              </div>
+              <div class="link-row">
+                <a href="#" class="btn btn-live">Live Demo</a>
+                <a href="#" class="btn btn-code">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project-card" data-project>
+            <div class="project-preview">Project 2</div>
+            <div class="card-body">
+              <p class="status">Under testing</p>
+              <h3>Project 2</h3>
+              <p class="desc">Project details, GitHub link, and live demo will be added later.</p>
+              <div class="tag-row">
+                <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+              </div>
+              <div class="link-row">
+                <a href="#" class="btn btn-live">Live Demo</a>
+                <a href="#" class="btn btn-code">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project-card" data-project>
+            <div class="project-preview">Project 3</div>
+            <div class="card-body">
+              <p class="status">Under testing</p>
+              <h3>Project 3</h3>
+              <p class="desc">Project details, GitHub link, and live demo will be added later.</p>
+              <div class="tag-row">
+                <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+              </div>
+              <div class="link-row">
+                <a href="#" class="btn btn-live">Live Demo</a>
+                <a href="#" class="btn btn-code">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project-card" data-project>
+            <div class="project-preview">Project 4</div>
+            <div class="card-body">
+              <p class="status">Under testing</p>
+              <h3>Project 4</h3>
+              <p class="desc">Project details, GitHub link, and live demo will be added later.</p>
+              <div class="tag-row">
+                <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+              </div>
+              <div class="link-row">
+                <a href="#" class="btn btn-live">Live Demo</a>
+                <a href="#" class="btn btn-code">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project-card" data-project>
+            <div class="project-preview">Project 5</div>
+            <div class="card-body">
+              <p class="status">Under testing</p>
+              <h3>Project 5</h3>
+              <p class="desc">Project details, GitHub link, and live demo will be added later.</p>
+              <div class="tag-row">
+                <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+              </div>
+              <div class="link-row">
+                <a href="#" class="btn btn-live">Live Demo</a>
+                <a href="#" class="btn btn-code">GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="certificates">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="section-kicker">Certificates</p>
+          <h2>Five certificate slots</h2>
+        </div>
+
+        <div class="cert-grid">
+          <button class="card cert-card" type="button" data-cert data-title="Certificate 1" data-subtitle="NPTEL / IBM / In progress" data-image="cert1.jpg">
+            <img src="cert1.jpg" alt="Certificate 1" />
+            <div class="card-body">
+              <h3>Certificate 1</h3>
+              <p>NPTEL / IBM / In progress</p>
+            </div>
+          </button>
+
+          <button class="card cert-card" type="button" data-cert data-title="Certificate 2" data-subtitle="NPTEL / IBM / In progress" data-image="cert2.jpg">
+            <img src="cert2.jpg" alt="Certificate 2" />
+            <div class="card-body">
+              <h3>Certificate 2</h3>
+              <p>NPTEL / IBM / In progress</p>
+            </div>
+          </button>
+
+          <button class="card cert-card" type="button" data-cert data-title="Certificate 3" data-subtitle="NPTEL / IBM / In progress" data-image="cert3.jpg">
+            <img src="cert3.jpg" alt="Certificate 3" />
+            <div class="card-body">
+              <h3>Certificate 3</h3>
+              <p>NPTEL / IBM / In progress</p>
+            </div>
+          </button>
+
+          <button class="card cert-card" type="button" data-cert data-title="Certificate 4" data-subtitle="Placeholder image later" data-image="cert4.jpg">
+            <img src="cert4.jpg" alt="Certificate 4" />
+            <div class="card-body">
+              <h3>Certificate 4</h3>
+              <p>Placeholder image later</p>
+            </div>
+          </button>
+
+          <button class="card cert-card" type="button" data-cert data-title="Certificate 5" data-subtitle="Placeholder image later" data-image="cert5.jpg">
+            <img src="cert5.jpg" alt="Certificate 5" />
+            <div class="card-body">
+              <h3>Certificate 5</h3>
+              <p>Placeholder image later</p>
+            </div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="section-kicker">Contact</p>
+          <h2>Reach me directly</h2>
+        </div>
+
+        <div class="card contact-grid">
+          <a class="contact-box" href="mailto:sanklechayash017@gmail.com">
+            <span>Email</span>
+            <strong>sanklechayash017@gmail.com</strong>
+          </a>
+
+          <a class="contact-box" href="https://www.linkedin.com/in/yash-dilip-sanklecha-1530b432b" target="_blank" rel="noreferrer">
+            <span>LinkedIn</span>
+            <strong>linkedin.com/in/yash-dilip-sanklecha</strong>
+          </a>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer>
-    © 2025 Yash Dilip Sanklecha
+  <footer class="footer">
+    <div class="wrap">
+      <p>© 2025 Yash Dilip Sanklecha</p>
+    </div>
   </footer>
 
-  <button class="backtop" id="backTop" aria-label="Back to top">↑</button>
+  <button class="backtop" id="backTop" type="button" aria-label="Back to top">↑</button>
 
-  <script src="main.js"></script>
-  <script src="github.js"></script>
-  <script src="projects.js"></script>
-  <script src="certificates.js"></script>
-  <script src="particles.js"></script>
-  <script src="scroll-animations.js"></script>
+  <div class="modal" id="previewModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" type="button" data-close-modal aria-label="Close modal">×</button>
+      <img id="modalImage" alt="" />
+      <h3 id="modalTitle"></h3>
+      <p id="modalSubtitle"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
