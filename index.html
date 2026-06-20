@@ -1,171 +1,195 @@
+
+
+    
+  
+    
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Yash Dilip Sanklecha | Portfolio</title>
-  <style>
-    :root {
-      --primary-blue: #0055A6;
-      --gold: #FFB81C;
-      --bg-color: #f4f4f4;
-      --text-color: #222;
-    }
-
-    
-
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: var(--bg-color);
-      color: var(--text-color);
-    }
-
-    header {
-      background-color: var(--primary-blue);
-      color: white;
-      padding: 30px 20px 20px;
-      text-align: center;
-    }
-
-    header img {
-      width: 130px;
-      height: 130px;
-      border-radius: 50%;
-      border: 4px solid var(--gold);
-      margin-bottom: 10px;
-    }
-
-    h1 {
-      margin: 10px 0 5px;
-      font-size: 28px;
-    }
-
-    h2 {
-      margin: 5px 0 20px;
-      font-weight: normal;
-      color: var(--gold);
-    }
-
-    marquee {
-      background-color: var(--gold);
-      color: var(--primary-blue);
-      font-weight: bold;
-      padding: 8px;
-      font-size: 16px;
-    }
-
-    main {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 0 15px;
-    }
-
-    details {
-      margin: 15px 0;
-      border-left: 6px solid var(--primary-blue);
-      background: white;
-      padding: 15px;
-    }
-
-    summary {
-      font-weight: bold;
-      font-size: 18px;
-      cursor: pointer;
-      color: var(--primary-blue);
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    a {
-      color: var(--primary-blue);
-    }
-
-    footer {
-      text-align: center;
-      padding: 15px;
-      background-color: var(--primary-blue);
-      color: white;
-      margin-top: 20px;
-    }
-
-    @media (max-width: 600px) {
-      header img {
-        width: 100px;
-        height: 100px;
-      }
-
-      h1 {
-        font-size: 22px;
-      }
-    }
-  </style>
+  <meta
+    name="description"
+    content="Portfolio of Yash Dilip Sanklecha, CSE student, semester 4 completed, CGPA 9.83333, skills, projects, certificates, and coding profile."
+  />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="animations.css" />
+  <link rel="stylesheet" href="responsive.css" />
 </head>
-<body>
+<body data-theme="light">
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#home">Yash Dilip Sanklecha</a>
 
-  <!-- Header -->
-  <header>
-    <img src="myphoto.jpg" alt="Yash Dilip Sanklecha" />
-    <h1>YASH DILIP SANKLECHA</h1>
-    <h2>CSE Student at SDMCET</h2>
+      <nav class="nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#github">GitHub</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">🌙</button>
+    </div>
   </header>
 
-  <!-- Marquee -->
-  <marquee behavior="scroll" direction="left" scrollamount="6">
-    Welcome to my portfolio! Passionate about C++, Python, and Web Development. Let's build the future together.
-  </marquee>
-  
-  
-  <!-- Content -->
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <img class="avatar" src="myphoto.jpg" alt="Yash Dilip Sanklecha" />
+      <div class="hero-content">
+        <h1>YASH DILIP SANKLECHA</h1>
+        <div class="type-row" id="typeText">CSE Student</div>
+        <p>
+          Computer Science Engineering student focused on strong fundamentals, real projects,
+          and internship-level presentation. Built to show proof of skill fast.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="resume.pdf" download>Download Resume</a>
+          <a class="btn btn-secondary" href="#projects">View Projects</a>
+        </div>
+
+        <div class="chips">
+          <span class="chip">C</span>
+          <span class="chip">C++</span>
+          <span class="chip">Java</span>
+          <span class="chip">Python</span>
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">App Development</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <main>
-    <details>
-      <summary>About Me</summary>
-      <p>I am a Computer Science and Engineering student passionate about software development and data structures. I enjoy solving real-world problems through efficient code and constantly aim to improve my technical skills.</p>
-    </details>
+    <div class="wrap">
+      <section class="section card">
+        <div class="section-head">
+          <h2>Snapshot</h2>
+          <span>Quick proof first</span>
+        </div>
 
-    <details>
-      <summary>Skills</summary>
-      <ul>
-        <li>C++</li>
-        <li>Python</li>
-        <li>C</li>
-        <li>Java</li>
-        <li>HTML</li>
-        <li>Data Structures and Algorithms in C++</li>
-      </ul>
-    </details>
+        <div class="stats-grid">
+          <div class="stat"><strong>9.83333</strong><span>Current CGPA</span></div>
+          <div class="stat"><strong>4</strong><span>Semesters Completed</span></div>
+          <div class="stat"><strong>5</strong><span>Projects Planned</span></div>
+          <div class="stat"><strong>5</strong><span>Certificates Planned</span></div>
+        </div>
+      </section>
 
-    <details>
-      <summary>Education</summary>
-      <p><strong>B.E. in Computer Science and Engineering</strong><br />
-         SDM College of Engineering and Technology (SDMCET)<br />
-         2024 – 2028</p>
-    </details>
-    <details>
-    <summary>My Certificates</summary>
-    
-    
-<marquee behavior="scroll" direction="left" scrollamount="4" loop="infinite" style="background: white; padding: 15px 0;">
-  <img src="cert3.jpg" />
-  <img src="cert2.jpg" />
-  <img src="cert1.jpg" />
-</marquee>
-</details>
+      <section id="about" class="section card">
+        <div class="section-head">
+          <h2>About Me</h2>
+          <span>Student profile</span>
+        </div>
 
-    <details>
-      <summary>Contact</summary>
-      <p>Email: <a href="mailto:sanklechayash017@gmail.com">sanklechayash017@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/yash-dilip-sanklecha-1530b432b">linkedin.com/in/yash-dilip-sanklecha</a></p>
-    </details>
+        <div class="about-grid">
+          <div>
+            <p>
+              I am a Computer Science Engineering student focused on building a strong profile for
+              internships and competitive opportunities. I value practical execution, clean work,
+              and showing proof through real projects and certifications.
+            </p>
+            <p>
+              I have completed semester 4 and my current CGPA is 9.83333.
+            </p>
+          </div>
+
+          <ul class="info-list">
+            <li><span>Name</span><b>Yash Dilip Sanklecha</b></li>
+            <li><span>Branch</span><b>Computer Science Engineering</b></li>
+            <li><span>Status</span><b>Semester 4 Completed</b></li>
+            <li><span>Focus</span><b>Internship-Ready Projects</b></li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="skills" class="section card">
+        <div class="section-head">
+          <h2>Skills</h2>
+          <span>Current stack</span>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill"><div class="skill-top"><span>C</span><span>85%</span></div><div class="bar"><div class="fill" style="width:85%"></div></div></div>
+          <div class="skill"><div class="skill-top"><span>C++</span><span>92%</span></div><div class="bar"><div class="fill" style="width:92%"></div></div></div>
+          <div class="skill"><div class="skill-top"><span>Java</span><span>80%</span></div><div class="bar"><div class="fill" style="width:80%"></div></div></div>
+          <div class="skill"><div class="skill-top"><span>Python</span><span>78%</span></div><div class="bar"><div class="fill" style="width:78%"></div></div></div>
+          <div class="skill"><div class="skill-top"><span>HTML</span><span>95%</span></div><div class="bar"><div class="fill" style="width:95%"></div></div></div>
+          <div class="skill"><div class="skill-top"><span>CSS</span><span>93%</span></div><div class="bar"><div class="fill" style="width:93%"></div></div></div>
+          <div class="skill"><div class="skill-top"><span>JavaScript</span><span>82%</span></div><div class="bar"><div class="fill" style="width:82%"></div></div></div>
+          <div class="skill"><div class="skill-top"><span>App Development</span><span>70%</span></div><div class="bar"><div class="fill" style="width:70%"></div></div></div>
+        </div>
+      </section>
+
+      <section id="github" class="section card">
+        <div class="section-head">
+          <h2>GitHub</h2>
+          <span>Live profile data</span>
+        </div>
+        <div class="github-loading">Loading GitHub profile...</div>
+      </section>
+
+      <section id="projects" class="section card">
+        <div class="section-head">
+          <h2>Projects</h2>
+          <span>5 slots ready</span>
+        </div>
+
+        <div class="projects-grid"></div>
+
+        <div class="note">
+          Project images are placeholders now. Replace them later with screenshots or live website previews.
+        </div>
+      </section>
+
+      <section id="certificates" class="section card">
+        <div class="section-head">
+          <h2>Certificates</h2>
+          <span>5 slots ready</span>
+        </div>
+
+        <div class="cert-grid"></div>
+      </section>
+
+      <section id="contact" class="section card">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <span>Direct reach</span>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-box">
+            <strong>Email</strong>
+            <a href="mailto:sanklechayash017@gmail.com">sanklechayash017@gmail.com</a>
+          </div>
+
+          <div class="contact-box">
+            <strong>LinkedIn</strong>
+            <a href="https://www.linkedin.com/in/yash-dilip-sanklecha-1530b432b" target="_blank" rel="noreferrer">
+              linkedin.com/in/yash-dilip-sanklecha
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
   </main>
 
-  <!-- Footer -->
   <footer>
-    <p>© 2025 Yash Dilip Sanklecha</p>
+    © 2025 Yash Dilip Sanklecha
   </footer>
 
-</body>
+  <button class="backtop" id="backTop" aria-label="Back to top">↑</button>
 
+  <script src="main.js"></script>
+  <script src="github.js"></script>
+  <script src="projects.js"></script>
+  <script src="certificates.js"></script>
+  <script src="particles.js"></script>
+  <script src="scroll-animations.js"></script>
+</body>
 </html>
