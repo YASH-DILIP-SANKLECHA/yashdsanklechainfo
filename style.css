@@ -10,7 +10,6 @@
   --border: rgba(220, 228, 238, 0.95);
   --shadow: 0 18px 40px rgba(8, 28, 58, 0.08);
   --shadow-strong: 0 24px 55px rgba(8, 28, 58, 0.14);
-  --ring: 0 0 0 4px rgba(0, 85, 166, 0.14);
 }
 
 *,
@@ -102,21 +101,22 @@ button {
 
 .nav-toggle {
   display: none;
-  width: 44px;
-  height: 44px;
+  width: 46px;
+  height: 46px;
   border: 1px solid var(--border);
   background: #fff;
-  border-radius: 14px;
+  border-radius: 16px;
   cursor: pointer;
   align-items: center;
   justify-content: center;
   gap: 4px;
   box-shadow: var(--shadow);
+  padding: 0;
 }
 
 .nav-toggle span {
   display: block;
-  width: 18px;
+  width: 20px;
   height: 2px;
   background: var(--primary);
   border-radius: 999px;
@@ -359,7 +359,7 @@ button {
   padding: 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 12px;
   font-weight: 900;
   font-size: 20px;
@@ -374,6 +374,7 @@ button {
   content: "▾";
   font-size: 18px;
   color: var(--muted);
+  margin-left: auto;
 }
 
 .accordion[open] summary::after {
