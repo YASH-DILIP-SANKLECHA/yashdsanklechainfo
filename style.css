@@ -100,7 +100,7 @@ button {
 }
 
 .nav-toggle {
-  display: none;
+  display: inline-flex;
   width: 46px;
   height: 46px;
   border: 1px solid var(--border);
@@ -109,15 +109,16 @@ button {
   cursor: pointer;
   align-items: center;
   justify-content: center;
-  gap: 4px;
+  gap: 5px;
   box-shadow: var(--shadow);
   padding: 0;
+  flex-direction: column;
 }
 
 .nav-toggle span {
   display: block;
   width: 20px;
-  height: 2px;
+  height: 3px;
   background: var(--primary);
   border-radius: 999px;
 }
@@ -584,7 +585,17 @@ button {
 
 @media (max-width: 760px) {
   .nav-toggle {
+    width: 46px;
+    height: 46px;
     display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .nav-toggle span {
+    width: 20px;
+    height: 3px;
   }
 
   .nav {
